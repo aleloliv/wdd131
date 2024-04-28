@@ -6,22 +6,50 @@
 
 body {
     display: grid;
-    grid-template-rows: 33%, 33%, 33%;
-    grid-template-columns: 66%, 33%;
+    grid-template-rows: 1fr, 1fr, 1fr;
 }
 
 header {
+    background-color: gray;
     grid-row: 1;
     margin: 0 auto;
     width: 100%;
+    color: white;
+}
+
+nav {
+    background-color: black;
     display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 0.3rem;
+    position: relative;
+    flex: 1 1 100%;
 }
 
 main {
+    display: grid;
     grid-row: 2;
+    background-color: lightgray;
+}
+
+aside {
+    grid-row: 1;
+    grid-column: 2;
 }
 
 footer {
     grid-row: 3;
+    background-color: gray;
+    color: white;
+    text-align: center;
 }
-
