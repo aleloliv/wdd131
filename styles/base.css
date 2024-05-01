@@ -131,8 +131,8 @@
 
     --nav-background-color: #333333;
     --nav-link-color: #F9EFE5;
-    --nav-hover-link-color: #007F41;
-    --nav-hover-background-color: #174E70;
+    --nav-hover-link-color: #00B74A;
+    --nav-hover-background-color: #126D95;
 }
 
 * {
@@ -142,7 +142,10 @@
 }
 
 body {
-    padding: 100px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 header {
@@ -183,21 +186,22 @@ nav ul li {
 }
 
 nav a {
-    display: block;
-    color: var(--nav-link-color);
-    text-align: center;
-    padding: 1rem;
-    font-weight: bold;
-    font-size: medium;
-    text-decoration: none;
+  display: block;
+  color: var(--nav-link-color);
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: medium;
+  text-decoration: none;
+  border: 1px solid transparent;
 }
 
 nav a:hover {
-    border: 1px solid #fff;
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-    font-weight: 700;
-    text-decoration: none;
+  border-color: #fff;
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 main {
