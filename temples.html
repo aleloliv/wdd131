@@ -16,17 +16,17 @@
         <button id="menu"></button>
         <nav class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li class="home"><a href="#">Home</a></li>
+                <li class="old"><a href="#">Old</a></li>
+                <li class="new"><a href="#">New</a></li>
+                <li class="large"><a href="#">Large</a></li>
+                <li class="small"><a href="#">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2 id="menu-selection"></h2>
-        <section>
+        <h2 id="menu-selection"><span id="currentoption">Home</span></h2>
+        <div class="figures">
             <figure id="temple1">
                 <img src="images/sao-paulo-brazil-temple-46816.jpg" alt="São Paulo, Brazil Temple">
                 <figcaption>São Paulo, Brazil Temple</figcaption>
@@ -63,13 +63,11 @@
                 <img src="images/natal-brazil-temple-45005.jpg" alt="Natal, Brazil Temple">
                 <figcaption>Natal, Brazil Temple</figcaption>
             </figure>
-        </section>
+        </div>
     </main>
     <footer>
-        <footer>
-            <p>©<span id="currentyear"></span> | Alexandre de M. S. L. de Oliveira | São Paulo, Brazil</p>
-            <p id="lastModified"></p>
-        </footer>
+        <p>©<span id="currentyear"></span> | Alexandre de M. S. L. de Oliveira | São Paulo, Brazil</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>

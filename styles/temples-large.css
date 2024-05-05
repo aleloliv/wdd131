@@ -62,7 +62,7 @@
         margin: 0 auto;
     }
 
-    section {
+    .figures {
         display: grid;
         padding: 10vh;
         grid-template-columns: repeat(3, 1fr);
@@ -77,17 +77,17 @@
         align-self: center;
     }
 
-    section figure {
+    .figures figure {
         margin: 0 auto;
         padding: 0;
     }
 
-    section figure img {
+    .figures figure img {
         width: 300px;
         height: auto;
     }
 
-    section figcaption {
+    .figures figcaption {
         text-align: center;
     }
 

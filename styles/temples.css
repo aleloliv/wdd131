@@ -111,7 +111,7 @@
         margin: 0 auto;
     }
     
-    section {
+    .figures {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -125,12 +125,12 @@
         align-self: center;
     }
     
-    section figure img {
+    .figures figure img {
         width: 250px;
         height: auto;
     }
     
-    section figcaption {
+    .figures figcaption {
         text-align: center;
         margin: 0 auto;
         padding: 0;
@@ -229,6 +229,13 @@ header h1 {
     box-sizing: border-box;
     font-size: 1rem;
     margin: 0;
+}
+
+main h2 {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: xx-large;
+    margin: 10px auto;
 }
 
 footer {

@@ -29,3 +29,16 @@ let formattedDate = addLeadingZero(oLastModif.getMonth() + 1) + '/' +
                     addLeadingZero(oLastModif.getSeconds());
 
 lastModified.textContent = "Last Modification: " + formattedDate;
+
+document.addEventListener('DOMContentLoaded', function() {
+    const currentOption = document.querySelector('#currentoption');
+    const navLinks = document.querySelectorAll('.navigation ul li a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const selectedOption = event.target.textContent;
+            currentOption.textContent = selectedOption;
+        });
+    });
+});
