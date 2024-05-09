@@ -113,8 +113,8 @@
     
     .figures {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(var(--num-columns, 1), 1fr);
+        grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
         row-gap: 20px;
         column-gap: 20px;
         justify-content: center;
@@ -126,8 +126,9 @@
     }
     
     .figures figure img {
-        width: 250px;
-        height: auto;
+        object-fit: cover;
+        width: 350px;
+        height: 250px;
     }
     
     .figures figcaption {

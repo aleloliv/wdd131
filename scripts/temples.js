@@ -42,3 +42,38 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const currentOption = document.querySelector('#currentoption');
+    const navLinks = document.querySelectorAll('.navigation ul li a');
+    const temples = document.querySelectorAll('.figures figure');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const selectedOption = event.target.textContent;
+            currentOption.textContent = selectedOption;
+
+            temples.forEach(temple => {
+                temple.style.display = 'none';
+            });
+
+            if (selectedOption === 'Home') {
+                temples.forEach(temple => {
+                    temple.style.display = 'block';
+                });
+            } else {
+                temples.forEach(temple => {
+                    if (temple.classList.contains(selectedOption)) {
+                        temple.style.display = 'block';
+                    }
+                });
+            }
+            
+            let numColumns = Math.ceil(templesToShow.length / 3);
+            document.documentElement.style.setProperty('--num-columns', numColumns);
+        });
+    });
+});
+
