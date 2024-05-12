@@ -39,8 +39,8 @@ function calculateWindChill(temperature, windSpeed) {
 // Function to update wind chill value in HTML
 function updateWindChill() {
     // Static values for temperature and wind speed (you can adjust these as needed)
-    const temperature = 4; // in °C
-    const windSpeed = 3; // in km/h
+    const temperature = 24; // in °C
+    const windSpeed = 7; // in km/h
 
     // Calculate wind chill
     const windChill = calculateWindChill(temperature, windSpeed);
