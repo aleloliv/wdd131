@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.data-list ol {
+    display: grid;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    margin: 1rem;
+}
+
+.wheather ol {
+    display: grid;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin: 1rem;
+}
+
+.label {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    text-align: right;
+    align-content: center;
+}
+
+ol {
+    grid-row: 2;
+}
+
+li {
+    list-style-type: none;
+}
+
+.value {
+    font-family: var(--paragraph-font);
+    margin-top: -5px;
+    margin-bottom: -5px;
+    text-align: left;
+    align-content: center;
+}
+
+footer {
+    background-color: #312682;
+    margin: 0 auto;
+    color: #FDFFFA;
+    text-align: center;
+}
+
+footer p {
+    padding: 10px;
+}
+
+header {
+    background-color: #312682;
+    color: #FDFFFA;
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    font-size: x-large;
+}
+
+@media screen and (min-width: 500px) {
+    h2 {
+        display: block;
+        background-color: #019642;
+        text-align: left;
+        padding: 1rem;
+        color: #000000;
+        font-size: 1.5rem;
+        font-family: var(--heading-font);
+        margin: 1rem;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .data-list {
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 20%;
+        left: 1%;
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+    }
+
+    .wheather {
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 40%;
+        right: 1%;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .wheather h2 {
+        position: relative;
+    }
+
+    .wheather img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100px;
+        /*grid-column: 2;*/
+    }
+}

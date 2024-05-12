@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Week 3 Assignment Madagascar Page</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Alexandre de Morais Sanches Lorenzoni de Oliveira - W03 Assignment: CSS and JavaScript practices">
+    <meta name="author" content="Alexandre de Morais Sanches Lorenzoni de Oliveira">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1500px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 1000px)" srcset="images/hero-medium.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-small.webp">
+                <img src="images/hero-small.webp" alt="São Paulo City">
+            </picture>
+        </div>
+        <div class="data-list">
+            <h2>Data</h2>
+            <ol>
+                <li class="label">Area:</li> 
+                <li class="value">8,510,417.771 sq km</li>
+                <li class="label">Population:</li>
+                <li class="value">203,080,756</li>
+                <li class="label">Capital:</li>
+                <li class="value">Brasília</li>
+                <li class="label">Language:</li>
+                <li class="value">Portuguese</li>
+                <li class="label">Currency:</li>
+                <li class="value">Real</li>
+                <li class="label">Time Zone:</li>
+                <li class="value">UTC-3</li>
+                <li class="label">Calling Code:</li>
+                <li class="value">+55</li>
+                <li class="label">Internet TLD:</li>
+                <li class="value">.br</li>
+            </ol>
+        </div>
+        <div class="wheather">
+            <h2>Wheather</h2>
+            <img src="images/sunny.svg" alt="wheather-miniature">
+            <ol>
+                <li class="label">Temperature:</li>
+                <li class="value">24 ºC</li>
+                <li class="label">Conditions:</li>
+                <li class="value">Sunny</li>
+                <li class="label">Wind:</li>
+                <li class="value">7 km/h</li>
+                <li class="label">Wind Chill:</li>
+                <li class="value">28 ºC</li>
+            </ol>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Alexandre de M. S. L. de Oliveira | São Paulo, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
