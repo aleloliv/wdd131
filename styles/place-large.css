@@ -111,6 +111,18 @@ header {
         right: 0;
         top: 0;
         width: 100px;
-        /*grid-column: 2;*/
     }
+
+    .wheather img::after {
+        content: "/images/sunny.svg";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 150px;
+        height: 150px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        z-index: 1;
+    }
+   
 }

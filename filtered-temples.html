@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Week 4 Assignment Enhanced Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Alexandre de Morais Sanches Lorenzoni de Oliveira - W04 Assignment: Enhanced Picture Album, Page with a temple album with responsive code, a hamburg menu element ">
+    <meta name="author" content="Alexandre de Morais Sanches Lorenzoni de Oliveira">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Mobile menu navigation"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#" data-option="home">Home</a></li>
+                <li><a href="#" data-option="old">Old</a></li>
+                <li><a href="#" data-option="new">New</a></li>
+                <li><a href="#" data-option="large">Large</a></li>
+                <li><a href="#" data-option="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="menu-selection"><span id="currentoption">Home</span></h2>
+        <div id="temple-figures" class="temple-figures"></div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Alexandre de M. S. L. de Oliveira | São Paulo, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

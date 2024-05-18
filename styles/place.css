@@ -73,17 +73,6 @@ footer p {
         justify-items: center;
     }
 
-    .wheather img::after {
-        grid-row: 2;
-        grid-column: 1;
-        align-self: center;
-        align-content: center;
-        justify-self: center;
-        justify-items: center;
-        width: 150px;
-        height: 150px;
-    }
-
     .wheather ol {
         grid-row: 3;
     }
