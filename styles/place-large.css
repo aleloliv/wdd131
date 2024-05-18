@@ -106,23 +106,17 @@ header {
         position: relative;
     }
 
+
     .wheather img {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100px;
+        display: none;
     }
 
-    .wheather img::after {
-        content: "/images/sunny.svg";
+    .wheather::after {
+        content: '\2600';
+        color: yellow;
+        font-size: 3rem;
         position: absolute;
-        right: 0;
-        top: 0;
-        width: 150px;
-        height: 150px;
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 50%;
-        z-index: 1;
+        right: 10%;
+        top: 5%;
     }
-   
 }
