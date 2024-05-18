@@ -168,3 +168,16 @@ function displayTempleCards(option) {
 document.addEventListener('DOMContentLoaded', function () {
     displayTempleCards('home');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const currentOption = document.querySelector('#currentoption');
+    const navLinks = document.querySelectorAll('.navigation ul li a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const selectedOption = event.target.textContent;
+            currentOption.textContent = selectedOption;
+        });
+    });
+});
