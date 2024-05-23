@@ -131,13 +131,13 @@ function displayTempleCards(option) {
 
     switch (option) {
         case 'old':
-            filteredTemples = temples.filter(temple => new Date(temple.dedicated) < new Date('1999-01-01'));
+            filteredTemples = temples.filter(temple => new Date(temple.dedicated) < new Date('1900-01-01'));
             break;
         case 'new':
             filteredTemples = temples.filter(temple => new Date(temple.dedicated) >= new Date('2000-01-01'));
             break;
         case 'large':
-            filteredTemples = temples.filter(temple => temple.area >= 10000);
+            filteredTemples = temples.filter(temple => temple.area >= 90000);
             break;
         case 'small':
             filteredTemples = temples.filter(temple => temple.area < 10000);
@@ -169,12 +169,12 @@ document.addEventListener('DOMContentLoaded', function () {
     displayTempleCards('home');
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const currentOption = document.querySelector('#currentoption');
     const navLinks = document.querySelectorAll('.navigation ul li a');
 
     navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
+        link.addEventListener('click', function (event) {
             event.preventDefault();
             const selectedOption = event.target.textContent;
             currentOption.textContent = selectedOption;
