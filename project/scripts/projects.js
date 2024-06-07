@@ -114,3 +114,12 @@ function displayProjects(projects) {
         projectShowcase.appendChild(projectCard);
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.navigation');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show-navigation');
+    });
+});
