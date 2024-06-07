@@ -40,7 +40,10 @@
     }
     
     .navigation {
-        display: none;
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        width: 80%;
     }
     
     .navigation a {
@@ -55,19 +58,9 @@
         text-align: center;
         display: inline-block;
     }
-    
-    .show-navigation {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        position: absolute;
-        top: 60px; /* Adjust this value as needed */
-        left: 0;
-        right: 0;
-        background-color: var(--background-color1);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .navigation a:hover {
+        background-color: var(--paragraph-color);
     }
     
     main {

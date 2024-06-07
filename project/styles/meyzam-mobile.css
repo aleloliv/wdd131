@@ -9,7 +9,6 @@
     --paragraph-font: 'Spectral', serif;
 }
 
-/* General Styling for Mobile */
 @media (max-width: 1000px) {
     body, html {
         height: 100%;
